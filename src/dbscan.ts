@@ -1,4 +1,3 @@
-
 /**
  * @class
  */
@@ -23,9 +22,8 @@ export default class DBSCAN<T> {
   private assigned: number[];
   private dataSetLength: number = 0;
 
-
   /**
-   * 
+   *
    * @param dataSet data set that needs to be clustered
    * @param epsilon neighbourhood radius
    * @param minPts minimum points to make a cluster
@@ -85,7 +83,6 @@ export default class DBSCAN<T> {
 
   private expandCluster(clusterId: number, neighbours: number[]): void {
     for (const pointId of neighbours) {
-
       if (this.visited[pointId] !== 1) {
         this.visited[pointId] = 1;
         const neighbors2 = this.regionQuery(pointId);
