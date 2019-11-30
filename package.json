@@ -1,5 +1,5 @@
 {
-  "name": "db-scan",
+  "name": "@shahzaib-sheikh/db-scan",
   "version": "0.0.9",
   "description": "Density based clustering algorithm implementation",
   "main": "lib/index.js",

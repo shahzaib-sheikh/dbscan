@@ -3,12 +3,12 @@ Density-based spatial clustering of applications with noise (DBSCAN) is one of t
 
 # Installation
 
-`npm install db-scan`
+`npm install @shahzaib-sheikh/db-scan`
 
 # Usage
 
 ```
-import DBSCAN from 'db-scan';
+import DBSCAN from '@shahzaib-sheikh/db-scan';
 
 
 const dbScan = new DBSCAN<ImageModel>(dataSetArray, neighbourHoodRadius, minPts, (a, b ) => {
@@ -24,7 +24,7 @@ To cluster (group) images taken on short period of time
 
 ```
 import * as moment from 'moment';
-import DBSCAN from 'db-scan';
+import DBSCAN from '@shahzaib-sheikh/db-scan';
 
 class ImageModel {
   public id: number;
